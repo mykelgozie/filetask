@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PaymentService } from './services/payment.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fileApp';
+  startTrial:boolean = false;
+
+
+
+  constructor(private paymentService:PaymentService){
+
+  }
+
+
+  changeAcess(){
+  
+
+  }
 }
